@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import './EasyEdit.css';
 
-// local modules
-import Globals from './globals';
+import EasyCheckbox from "./EasyCheckbox.jsx";
+import EasyColor from "./EasyColor.jsx";
+import EasyCustom from './EasyCustom.jsx';
+import EasyDatalist from "./EasyDatalist.jsx";
 import EasyDropdown from './EasyDropdown.jsx';
 import EasyInput from "./EasyInput.jsx";
 import EasyParagraph from "./EasyParagraph.jsx";
 import EasyRadio from "./EasyRadio.jsx";
-import EasyCheckbox from "./EasyCheckbox.jsx";
-import EasyColor from "./EasyColor.jsx";
-import EasyDatalist from "./EasyDatalist.jsx";
-import EasyCustom from './EasyCustom.jsx';
+// local modules
+import Globals from './globals';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 export default class EasyEdit extends React.Component {
 
@@ -155,7 +155,7 @@ export default class EasyEdit extends React.Component {
         <EasyCustom
           setValue={this.onChange}
           onBlur={this._onBlur}
-          onFocus={this._onFocus()}
+          onFocus={this._onFocus}
           value={this.state.tempValue}
           cssClassPrefix={cssClassPrefix}
         >
